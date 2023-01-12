@@ -1,4 +1,9 @@
-* { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -8,19 +13,33 @@
     height: 3rem;
     padding: 1rem;
   }
+
   .navbar .shortcuts {
     display: none;
   }
+
   .options {
     width: 1.5rem;
     height: 1.5rem;
   }
+
+  .social i {
+    font-size: 2rem;
+    color: rgb(59, 59, 59);
+  }
+
   .options i {
     font-size: 1.5rem;
   }
+
+  .social i:hover {
+    color: rgb(45, 204, 151);
+  }
+
   .options i:hover {
     color: rgb(45, 204, 151);
   }
+
   #homepage {
     display: flex;
     max-width: 100vw;
@@ -32,34 +51,30 @@
     padding: 2rem;
     justify-content: space-around;
   }
+
   #homepage h1 {
     color: rgb(0, 0, 88);
     font-size: 2.5rem;
     text-align: center;
   }
+
   #homepage h1 span {
     color: rgb(45, 204, 151);
   }
+
   #homepage p {
     font-size: larger;
     text-align: center;
   }
+
   .socials {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
   }
-  .social i {
-    font-size: 2rem;
-    color: rgb(59, 59, 59);
-  }
+
   .social {
     width: 2rem;
     height: 2rem;
-
   }
-  .social i:hover {
-    color: rgb(45, 204, 151);
-  }
-
 }
