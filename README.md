@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="shikimori.jpg" alt="logo" width="140"  height="auto" />
+  <img src="/images/shikimori.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Nicolas Olaya - Portfolio Project</b></h3>

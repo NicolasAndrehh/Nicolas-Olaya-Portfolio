@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: inter;
+  list-style: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -16,6 +17,12 @@
 
   .navbar .shortcuts {
     display: none;
+  }
+
+  .navbar h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
   }
 
   .options {
@@ -46,16 +53,19 @@
     min-height: 100vh;
     background-image: url(header-illsutration-mobile@2x.png);
     background-size: 100vw;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 2rem;
     flex-direction: column;
     padding: 2rem;
     justify-content: space-around;
+    align-items: center;
   }
 
   #homepage h1 {
     color: rgb(0, 0, 88);
     font-size: 2.5rem;
     text-align: center;
+    font-weight: 700;
   }
 
   #homepage h1 span {
@@ -63,7 +73,8 @@
   }
 
   #homepage p {
-    font-size: larger;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-align: center;
   }
 
@@ -71,10 +82,24 @@
     display: flex;
     list-style: none;
     justify-content: space-evenly;
+    width: 60vw;
   }
 
   .social {
     width: 2rem;
     height: 2rem;
   }
+
+  #homepage button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    background-color: white;
+    border: 1px solid #DFE1E6;
+  }
+
+  #homepage button i {
+    font-size: 1.1rem;
+  }
+  
 }
