@@ -18,6 +18,9 @@
   .options i {
     font-size: 1.5rem;
   }
+  .options i:hover {
+    color: rgb(45, 204, 151);
+  }
   #homepage {
     display: flex;
     max-width: 100vw;
@@ -49,6 +52,14 @@
   .social i {
     font-size: 2rem;
     color: rgb(59, 59, 59);
+  }
+  .social {
+    width: 2rem;
+    height: 2rem;
+
+  }
+  .social i:hover {
+    color: rgb(45, 204, 151);
   }
 
 }
