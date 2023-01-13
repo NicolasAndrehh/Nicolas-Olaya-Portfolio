@@ -190,21 +190,49 @@
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   }
 
+  .work-info a:active {
+    background-color: #008552;
+  }
+
+  .button:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .button:active {
+    background-color: #008552;
+  }
+
   .works-languajes-container {
     display: flex;
     justify-content: space-between;
   }
 
-  #aboutme-section {
+  #aboutme-section, .aboutme-bg {
     display: flex;
     flex-direction: column;
-    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
-    min-height: 100vh;
-    background-size: 100vw;
-    background-repeat: no-repeat;
-    padding: 2rem;
     align-items: center;
     gap: 1.5rem;
+    min-height: 100vh;
+  }
+
+  #aboutme-section .aboutme-bg {
+    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: max-content;
+    padding: 2rem;
+  }
+
+  @media only screen and (min-width: 400px) {
+    #aboutme-section .aboutme-bg {
+      padding: 5rem 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 455px) {
+    #aboutme-section .aboutme-bg {
+      padding: 10rem 2rem;
+    }
   }
 
   #aboutme-section .vector {
@@ -255,6 +283,10 @@
     gap: 0.5rem;
   }
 
+  .form-info {
+    padding: 2rem;
+  }
+
   .aboutme-card li {
     background-color: #fff;
     width: fit-content;
@@ -283,5 +315,11 @@
 
   #aboutme-section .textarea {
     height: 7rem;
+  }
+
+  .technology-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
