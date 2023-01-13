@@ -32,29 +32,41 @@
 
   .social i {
     font-size: 2rem;
-    color: rgb(59, 59, 59);
+    color: #505f79;
   }
 
   .options i {
+    color: #505f79;
     font-size: 1.5rem;
   }
 
   .social i:hover {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
   }
 
   .options i:hover {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
+  }
+
+  .work-info li {
+    background-color: #ebf0ee;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
   }
 
   #homepage {
     display: flex;
     max-width: 100vw;
     min-height: 100vh;
-    background-image: url(header-illsutration-mobile@2x.png);
+    background-image: url(./images/header-illsutration-mobile@2x.png);
     background-size: 100vw;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 2rem;
     flex-direction: column;
     padding: 2rem;
     justify-content: space-around;
@@ -62,17 +74,18 @@
   }
 
   #homepage h1 {
-    color: rgb(0, 0, 88);
+    color: #172b4d;
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
   }
 
   #homepage h1 span {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
   }
 
-  #homepage p {
+  #homepage p,
+  #aboutme-section p {
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
@@ -95,11 +108,219 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 2rem;
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #dfe1e6;
   }
 
   #homepage button i {
     font-size: 1.1rem;
+  }
+
+  #works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #works-section h2 {
+    color: #172b4d;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
+  #works-section hr {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #36b37e;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .works-container {
+    display: grid;
+    grid-gap: 1.25rem;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe1e6;
+    border-radius: 0.5rem;
+    width: 20.125rem;
+  }
+
+  .work .img-placeholder {
+    width: 20rem;
+    height: 15rem;
+    background-color: #ebf0ee;
+  }
+
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .work-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: fit-content;
+  }
+
+  .button {
+    text-decoration: none;
+    background-color: #36b37e;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0.75rem auto;
+  }
+
+  .work-info a:hover {
+    background-color: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .work-info a:active {
+    background-color: #008552;
+  }
+
+  .button:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .button:active {
+    background-color: #008552;
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #aboutme-section,
+  .aboutme-bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: 100vh;
+  }
+
+  #aboutme-section .aboutme-bg {
+    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: max-content;
+    padding: 2rem;
+  }
+
+  @media only screen and (min-width: 400px) {
+    #aboutme-section .aboutme-bg {
+      padding: 5rem 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 455px) {
+    #aboutme-section .aboutme-bg {
+      padding: 10rem 2rem;
+    }
+  }
+
+  #aboutme-section .vector {
+    position: absolute;
+    right: 0;
+  }
+
+  #aboutme-section h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+    color: #172b4d;
+    text-align: center;
+  }
+
+  .aboutme-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf0ee;
+    width: 20rem;
+    height: 22rem;
+    border: 1px solid #c1c7d0;
+    border-radius: 0.5rem;
+    gap: 2rem;
+  }
+
+  .aboutme-card img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .aboutme-card h4 {
+    color: #344563;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: fit-content;
+  }
+
+  .aboutme-card ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .form-info {
+    padding: 2rem;
+  }
+
+  .aboutme-card li {
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #36b37e;
+  }
+
+  #aboutme-section .input {
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid #d0d9d4;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 1rem;
+  }
+
+  .input::placeholder {
+    color: #091e42;
+    font-size: 1rem;
+  }
+
+  #aboutme-section .textarea {
+    height: 7rem;
+  }
+
+  .technology-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 }
