@@ -66,7 +66,6 @@
     background-image: url(./images/header-illsutration-mobile@2x.png);
     background-size: 100vw;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 2rem;
     flex-direction: column;
     padding: 2rem;
     justify-content: space-around;
@@ -84,7 +83,7 @@
     color: #36b37e;
   }
 
-  #homepage p {
+  #homepage p, #aboutme-section p{
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
@@ -121,6 +120,7 @@
     align-items: center;
     text-align: center;
     gap: 1rem;
+    margin-bottom: 3rem;
   }
 
   #works-section h2 {
@@ -169,12 +169,10 @@
     max-width: fit-content;
   }
 
-  .work-info a {
+  .button {
     text-decoration: none;
     background-color: #36b37e;
     padding: 0.75rem;
-    width: 7.62rem;
-    height: 3rem;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #fff;
@@ -192,4 +190,30 @@
     display: flex;
     justify-content: space-between;
   }
+
+  #aboutme-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
+    min-height: 100vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  #aboutme-section img {
+    position: absolute;
+    right: 0;
+  }
+
+  #aboutme-section h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+    color: #172b4d;
+  }
+
+
 }
