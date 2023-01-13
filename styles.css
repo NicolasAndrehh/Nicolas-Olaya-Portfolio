@@ -40,18 +40,30 @@
   }
 
   .social i:hover {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
   }
 
   .options i:hover {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
+  }
+
+  .work-info p {
+    background-color: #ebf0ee;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
   }
 
   #homepage {
     display: flex;
     max-width: 100vw;
     min-height: 100vh;
-    background-image: url(header-illsutration-mobile@2x.png);
+    background-image: url(./images/header-illsutration-mobile@2x.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     border-bottom-left-radius: 2rem;
@@ -62,14 +74,14 @@
   }
 
   #homepage h1 {
-    color: rgb(0, 0, 88);
+    color: #172b4d;
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
   }
 
   #homepage h1 span {
-    color: rgb(45, 204, 151);
+    color: #36b37e;
   }
 
   #homepage p {
@@ -95,11 +107,89 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 2rem;
-    background-color: white;
+    background-color: #fff;
     border: 1px solid #dfe1e6;
   }
 
   #homepage button i {
     font-size: 1.1rem;
+  }
+
+  #works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  #works-section h2 {
+    color: #172b4d;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
+  #works-section hr {
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #36b37e;
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .works-container {
+    display: grid;
+    grid-gap: 1.25rem;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe1e6;
+    border-radius: 0.5rem;
+  }
+
+  .work img {
+    width: 85vw;
+    height: 15rem;
+  }
+
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .work-info h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: fit-content;
+  }
+
+  .work-info a {
+    text-decoration: none;
+    background-color: #36b37e;
+    padding: 0.75rem;
+    width: 7.62rem;
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0.75rem auto;
+  }
+
+  .work-info a:hover {
+    background-color: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
