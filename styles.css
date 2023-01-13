@@ -83,7 +83,8 @@
     color: #36b37e;
   }
 
-  #homepage p, #aboutme-section p{
+  #homepage p,
+  #aboutme-section p {
     font-size: 1.25rem;
     line-height: 1.75rem;
     text-align: center;
@@ -214,6 +215,4 @@
     font-weight: 700;
     color: #172b4d;
   }
-
-
 }
