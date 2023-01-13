@@ -32,10 +32,11 @@
 
   .social i {
     font-size: 2rem;
-    color: rgb(59, 59, 59);
+    color: #505f79;
   }
 
   .options i {
+    color: #505f79;
     font-size: 1.5rem;
   }
 
@@ -47,7 +48,7 @@
     color: #36b37e;
   }
 
-  .work-info p {
+  .work-info li {
     background-color: #ebf0ee;
     width: fit-content;
     padding: 0.5rem;
@@ -149,11 +150,13 @@
     flex-direction: column;
     border: 1px solid #dfe1e6;
     border-radius: 0.5rem;
+    width: 20.125rem;
   }
 
-  .work img {
-    width: 85vw;
+  .work .img-placeholder {
+    width: 20rem;
     height: 15rem;
+    background-color: #ebf0ee;
   }
 
   .work-info {
@@ -204,7 +207,7 @@
     gap: 1.5rem;
   }
 
-  #aboutme-section img {
+  #aboutme-section .vector {
     position: absolute;
     right: 0;
   }
@@ -214,5 +217,71 @@
     line-height: 3.25rem;
     font-weight: 700;
     color: #172b4d;
+    text-align: center;
+  }
+
+  .aboutme-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf0ee;
+    width: 20rem;
+    height: 22rem;
+    border: 1px solid #c1c7d0;
+    border-radius: 0.5rem;
+    gap: 2rem;
+  }
+
+  .aboutme-card img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .aboutme-card h4 {
+    color: #344563;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: fit-content;
+  }
+
+  .aboutme-card ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .aboutme-card li {
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #36b37e;
+  }
+
+  #aboutme-section .input {
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid #d0d9d4;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 1rem;
+  }
+
+  .input::placeholder {
+    color: #091e42;
+    font-size: 1rem;
+  }
+
+  #aboutme-section .textarea {
+    height: 7rem;
   }
 }
