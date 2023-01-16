@@ -125,11 +125,11 @@
     margin-bottom: 3rem;
   }
 
-  #works-section h2 {
+  h2 {
     color: #172b4d;
     font-size: 2.5rem;
     line-height: 3.25rem;
-    font-weight: 700;
+    font-weight: 700;  
   }
 
   #works-section hr {
@@ -236,19 +236,6 @@
     }
   }
 
-  #aboutme-section .vector {
-    position: absolute;
-    right: 0;
-  }
-
-  #aboutme-section h2 {
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    font-weight: 700;
-    color: #172b4d;
-    text-align: center;
-  }
-
   .aboutme-card {
     display: flex;
     flex-direction: column;
@@ -284,10 +271,6 @@
     gap: 0.5rem;
   }
 
-  .form-info {
-    padding: 2rem;
-  }
-
   .aboutme-card li {
     background-color: #fff;
     width: fit-content;
@@ -300,21 +283,12 @@
     color: #36b37e;
   }
 
-  #aboutme-section .input {
-    width: 20rem;
-    height: 3rem;
-    border: 1px solid #d0d9d4;
-    border-radius: 0.25rem;
-    background: #fff;
-    padding: 1rem;
-  }
-
   .input::placeholder {
     color: #091e42;
     font-size: 1rem;
   }
 
-  #aboutme-section .textarea {
+  #contact-form form .textarea {
     height: 7rem;
   }
 
@@ -323,4 +297,26 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  #contact-form, #contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  #contact-form h2 {
+    text-align: center;
+  }
+
+  #contact-form .input {
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid #d0d9d4;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 1rem;
+  }
+
 }
