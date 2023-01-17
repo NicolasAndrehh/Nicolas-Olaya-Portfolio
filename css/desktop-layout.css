@@ -1,0 +1,75 @@
+@media only screen and (min-width: 768px) {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: inter, Arial, Verdana, Tahoma, sans-serif;
+      list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .text-blue {
+        color: #172b4d;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3.75rem;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        font-weight: 700;
+    }
+
+    .paragraph {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 400;
+    }
+
+    .works-languajes {
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 600;
+    }
+
+    .button {
+        text-decoration: none;
+        background-color: #36b37e;
+        padding: 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #fff;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0.75rem auto;
+      }
+    
+    .work-info a:hover {
+        background-color: #36b37f;
+        box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    }
+    
+    .work-info a:active {
+        background-color: #008552;
+    }
+    
+    .button:hover {
+        box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+    }
+    
+    .button:active {
+        background-color: #008552;
+    }
+    
+}
