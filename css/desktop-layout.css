@@ -252,5 +252,113 @@
         color: #42526e;
     }
 
+    .technology-categories {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .aboutme-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebf0ee;
+        width: 23rem;
+        height: 22rem;
+        border: 1px solid #c1c7d0;
+        border-radius: 0.5rem;
+        gap: 2rem;
+    }
     
+    .aboutme-card img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .aboutme-card h4 {
+        color: #344563;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+        max-width: fit-content;
+    }
+    
+    .aboutme-card ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    .aboutme-card li {
+        background-color: #fff;
+        width: fit-content;
+        padding: 0.75rem;
+        border-radius: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        color: #36b37e;
+    }
+
+    #contact-form, #contact-form form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 2.75rem;
+        padding: 2rem;
+        justify-content: flex-start;
+    }
+      
+    #contact-form h2 {
+        text-align: center;
+    }
+    
+    #contact-form .input {
+        border: 1px solid #d0d9d4;
+        border-radius: 0.25rem;
+        background: #fff;
+        padding: 1rem;
+    }
+
+    #contact-form .button {
+        margin: 0;
+    }
+
+    #first-name, #last-name {
+        width: 20rem;
+    }
+
+    #email, #textarea {
+        width: 42.75rem;
+    }
+
+    #textarea {
+        height: 7rem;
+    }
+
+    #contact-form {
+        display: flex;
+        background-image: url(/images/illustration-2-contact-form-desktop@2x.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background-size: 100vw;
+        width: 100vw;
+        height: 50rem;
+        padding: 0rem 7rem;
+    }
+
+    .form-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
 }

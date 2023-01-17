@@ -319,4 +319,8 @@
     padding: 1rem;
   }
 
+  .mobile-hide {
+    display: none;
+  }
+
 }
