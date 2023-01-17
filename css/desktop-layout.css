@@ -35,6 +35,11 @@
         font-weight: 700;
     }
 
+    h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
     .paragraph {
         font-size: 1.25rem;
         line-height: 2rem;
@@ -166,13 +171,20 @@
         flex-direction: column;
         padding: 2rem;
         align-items: center;
+        gap: 3rem;
     }
 
     .works-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
-        width: 70vw;
+        gap: 2rem;
+    }
+
+    @media only screen and (max-width: 1060px) {
+        .works-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
     }
     
     .work {
@@ -196,4 +208,49 @@
         padding: 1rem;
         gap: 1rem;
     }
+
+    .works-languajes-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .work-info li {
+        background-color: #ebf0ee;
+        width: fit-content;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        color: #3a4a42;
+    }
+
+    #aboutme-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme-bg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(/images/illustration\ about\ me\ desktop@2x.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        height: 25rem;
+    }
+
+    .aboutme-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 48rem;
+    }
+
+    .aboutme-info p {
+        color: #42526e;
+    }
+
+    
 }
