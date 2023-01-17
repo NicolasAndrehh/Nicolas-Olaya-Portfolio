@@ -7,6 +7,10 @@
       list-style: none;
     }
 
+    html {
+        overflow-x: hidden;
+    }
+
     a {
         text-decoration: none;
     }
@@ -76,5 +80,120 @@
         list-style: none;
     }
 
+    .desktop-hide {
+        display: none;
+    }    
+
+    .shortcuts-menu {
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .shortcuts-menu a {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        font-weight: 600;
+        color: #344563;
+    }
+
+    #main-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 9rem;
+        background-image: url(/images/Header-llustration-desktop@2x.png);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        width: 100vw;
+        height: 78rem;
+        align-items: center;
+    }
+
+    #homepage span {
+        color: #36b37e;
+    }
+
+    #homepage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        width: 50rem;
+    }
+
+    #homepage .socials {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social a {
+        color: #505f79;
+        font-size: 2rem;
+    }
+
+    .github {
+        order: 0;
+    }
+
+    .linkedin {
+        order: 1;
+    }
+
+    .angellist {
+        order: 2;
+    }
+     
+    .twitter {
+        order: 3;
+    }
+
+    .medium {
+        order: 4;
+    }
+
+    #homepage button {
+        background-color: #fff;
+        border: 1px solid #dfe1e6;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 2rem;
+    }
+
+    #works-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .works-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        width: 70vw;
+    }
     
+    .work {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #dfe1e6;
+        border-radius: 0.5rem;
+        width: 20.125rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .work .img-placeholder {
+        width: 20rem;
+        height: 15rem;
+        background-color: #ebf0ee;
+    }
+    
+    .work-info {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
 }
