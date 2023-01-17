@@ -272,6 +272,7 @@
   }
 
   .aboutme-card li {
+    float: left;
     background-color: #fff;
     width: fit-content;
     padding: 0.75rem;
@@ -292,31 +293,6 @@
     height: 7rem;
   }
 
-  .technology-categories {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  #contact-form, #contact-form form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
-  }
   
-  #contact-form h2 {
-    text-align: center;
-  }
-
-  #contact-form .input {
-    width: 20rem;
-    height: 3rem;
-    border: 1px solid #d0d9d4;
-    border-radius: 0.25rem;
-    background: #fff;
-    padding: 1rem;
-  }
 
 }
