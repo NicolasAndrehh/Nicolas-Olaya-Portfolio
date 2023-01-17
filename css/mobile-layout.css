@@ -71,7 +71,7 @@
     display: flex;
     max-width: 100vw;
     min-height: 100vh;
-    background-image: url(./images/header-illsutration-mobile@2x.png);
+    background-image: url(/images/header-illsutration-mobile@2x.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -217,14 +217,14 @@
   }
 
   #aboutme-section .aboutme-bg {
-    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
+    background-image: url(/images/illustration-\ about\ me-\ mobile.png);
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: max-content;
     padding: 2rem;
   }
 
-  @media only screen and (min-width: 400px) {
+  @media only screen and (max-width: 454px) {
     #aboutme-section .aboutme-bg {
       padding: 5rem 2rem;
     }

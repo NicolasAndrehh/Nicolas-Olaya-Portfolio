@@ -72,4 +72,9 @@
         background-color: #008552;
     }
     
+    li {
+        list-style: none;
+    }
+
+    
 }
