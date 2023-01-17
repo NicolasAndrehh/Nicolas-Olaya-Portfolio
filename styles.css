@@ -19,6 +19,13 @@
     display: none;
   }
 
+  h2 {
+    color: #172b4d;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
   .navbar h2 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -123,13 +130,6 @@
     text-align: center;
     gap: 1rem;
     margin-bottom: 3rem;
-  }
-
-  h2 {
-    color: #172b4d;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    font-weight: 700;  
   }
 
   #works-section hr {
@@ -272,7 +272,6 @@
   }
 
   .aboutme-card li {
-    float: left;
     background-color: #fff;
     width: fit-content;
     padding: 0.75rem;
@@ -298,22 +297,27 @@
     flex-direction: column;
     gap: 2rem;
   }
-  #contact-form, #contact-form form {
+
+  #contact-form,
+  #contact-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
     padding: 2rem;
   }
+
   #contact-form h2 {
     text-align: center;
   }
+
   #contact-form .input {
     width: 20rem;
     height: 3rem;
-    border: 1px solid #D0D9D4;
+    border: 1px solid #d0d9d4;
     border-radius: 0.25rem;
     background: #fff;
     padding: 1rem;
   }
+
 }
