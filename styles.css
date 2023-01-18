@@ -183,6 +183,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0.75rem auto;
+    border-radius: 0.25rem;
   }
 
   .work-info a:hover {
@@ -298,6 +299,17 @@
     gap: 2rem;
   }
 
+  .footer-background {
+    background-image: url(images/Frame.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    top: 933vh;
+  }
+
   #contact-form,
   #contact-form form {
     display: flex;
@@ -318,6 +330,11 @@
     border-radius: 0.25rem;
     background: #fff;
     padding: 1rem;
+  }
+
+  #contact-form .input:focus {
+    outline: none;
+    border: 1px solid #36b37e;
   }
 
   #contact-form #submit-button {
