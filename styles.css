@@ -19,6 +19,13 @@
     display: none;
   }
 
+  h2 {
+    color: #172b4d;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
   .navbar h2 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -125,13 +132,6 @@
     margin-bottom: 3rem;
   }
 
-  #works-section h2 {
-    color: #172b4d;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    font-weight: 700;
-  }
-
   #works-section hr {
     width: 3rem;
     height: 0.25rem;
@@ -183,6 +183,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0.75rem auto;
+    border-radius: 0.25rem;
   }
 
   .work-info a:hover {
@@ -236,19 +237,6 @@
     }
   }
 
-  #aboutme-section .vector {
-    position: absolute;
-    right: 0;
-  }
-
-  #aboutme-section h2 {
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    font-weight: 700;
-    color: #172b4d;
-    text-align: center;
-  }
-
   .aboutme-card {
     display: flex;
     flex-direction: column;
@@ -284,10 +272,6 @@
     gap: 0.5rem;
   }
 
-  .form-info {
-    padding: 2rem;
-  }
-
   .aboutme-card li {
     background-color: #fff;
     width: fit-content;
@@ -300,7 +284,51 @@
     color: #36b37e;
   }
 
-  #aboutme-section .input {
+  .input::placeholder {
+    color: #091e42;
+    font-size: 1rem;
+  }
+
+  #contact-form form .textarea {
+    height: 7rem;
+  }
+
+  .technology-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-background {
+    background-image: url(images/Frame.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 5rem;
+  }
+
+  #contact-form,
+  #contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    position: relative;
+  }
+
+  #contact-form {
+    margin-bottom: 16rem;
+  }
+
+  #contact-form h2 {
+    text-align: center;
+  }
+
+  #contact-form .input {
     width: 20rem;
     height: 3rem;
     border: 1px solid #d0d9d4;
@@ -309,18 +337,12 @@
     padding: 1rem;
   }
 
-  .input::placeholder {
-    color: #091e42;
-    font-size: 1rem;
+  #contact-form .input:focus {
+    outline: none;
+    border: 1px solid #36b37e;
   }
 
-  #aboutme-section .textarea {
-    height: 7rem;
-  }
-
-  .technology-categories {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  #contact-form #submit-button {
+    border: 0;
   }
 }
