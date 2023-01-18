@@ -19,6 +19,13 @@
     display: none;
   }
 
+  h2 {
+    color: #172b4d;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
   .navbar h2 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -123,13 +130,6 @@
     text-align: center;
     gap: 1rem;
     margin-bottom: 3rem;
-  }
-
-  h2 {
-    color: #172b4d;
-    font-size: 2.5rem;
-    line-height: 3.25rem;
-    font-weight: 700;  
   }
 
   #works-section hr {
@@ -306,7 +306,8 @@
     gap: 2rem;
   }
 
-  #contact-form, #contact-form #mobile-form {
+  #contact-form,
+  #contact-form #mobile-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +319,7 @@
   #contact-form .form-info {
     padding: 2rem;
   }
-  
+
   #contact-form h2 {
     text-align: center;
   }
@@ -363,5 +364,4 @@
     gap: 1rem;
     margin-bottom: 16rem;
   }
-
 }
