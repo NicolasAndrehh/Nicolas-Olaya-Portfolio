@@ -337,7 +337,7 @@
   }
 
   #contact-form,
-  #contact-form #desktop-form {
+  #contact-form form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -375,25 +375,7 @@
     margin: 0;
   }
 
-  #first-name,
-  #last-name {
-    width: 46%;
-  }
-
-  @media only screen and (max-width: 1230px) {
-    #first-name,
-    #last-name {
-      width: 45%;
-    }
-  }
-
-  @media only screen and (max-width: 1010px) {
-    #first-name,
-    #last-name {
-      width: 44%;
-    }
-  }
-
+  #full-name,
   #email,
   #textarea {
     width: 100%;
