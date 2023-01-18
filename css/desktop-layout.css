@@ -62,6 +62,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0.75rem auto;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
   .button:hover {
