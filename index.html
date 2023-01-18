@@ -5,54 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Olaya Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/mobile-layout.css">
+    <link rel="stylesheet" href="css/desktop-layout.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapped">
-        <nav class="navbar">
-            <h2>Welcome</h2>
 
-            <ul class="shortcuts-menu">
-                <li><a href="#" class="options"><i class="las la-bars"></i></a></li>
-                <li><a href="#" class="shortcuts">Portfolio</a></li>
-                <li><a href="#" class="shortcuts">About</a></li>
-                <li><a href="#" class="shortcuts">Contact</a></li>
-            </ul>
-            
-        </nav>
-
-        <main id="homepage">
-            <h1>Hey there. I'm Nicolas<br><span>I'm a software developer</span></h1>
-            
-            <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-            <ul class="socials">
-                <li class="social">
-                    <a href="https://twitter.com/nicolasolaya22"><i class="lab la-twitter"></i></a>
-                </li>
-                <li class="social">
-                    <a href="https://www.linkedin.com/in/nicolas-andres-olaya-gamba-3b032b248/"><i class="lab la-linkedin-in"></i></a>
-                </li>
-                <li class="social">
-                    <a href="#"><i class="lab la-medium"></i></a>
-                </li>
-                <li class="social">
-                    <a href="https://github.com/NicolasAndrehh"><i class="lab la-github"></i></a>
-                </li>
-                <li class="social">
-                    <a href="#"><i class="lab la-angellist"></i></a>
-                </li>
-            </ul>
-
-            <button>
-                <i class="las la-angle-down"></i>
-            </button>
-        </main>
+        <div id="main-desktop">
+            <nav class="navbar">
+                <h2 class="desktop-hide">Welcome</h2>
+    
+                <ul class="shortcuts-menu">
+                    <li class="desktop-hide"><a href="#" class="options"><i class="las la-bars"></i></a></li>
+                    <li><a href="#" class="shortcuts">Portfolio</a></li>
+                    <li><a href="#" class="shortcuts">About</a></li>
+                    <li><a href="#" class="shortcuts">Contact</a></li>
+                </ul>
+                
+            </nav>
+    
+            <main id="homepage">
+                <h1 class="text-blue text-center">Hey there. I'm Nicolas<br><span>I'm a software developer</span></h1>
+                
+                <p class="paragraph text-blue text-center"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+                <ul class="socials">
+                    <li class="social twitter">
+                        <a href="https://twitter.com/nicolasolaya22"><i class="lab la-twitter"></i></a>
+                    </li>
+                    <li class="social linkedin">
+                        <a href="https://www.linkedin.com/in/nicolas-andres-olaya-gamba-3b032b248/"><i class="lab la-linkedin-in"></i></a>
+                    </li>
+                    <li class="social medium">
+                        <a href="#"><i class="lab la-medium"></i></a>
+                    </li>
+                    <li class="social github">
+                        <a href="https://github.com/NicolasAndrehh"><i class="lab la-github"></i></a>
+                    </li>
+                    <li class="social angellist">
+                        <a href="#"><i class="lab la-angellist"></i></a>
+                    </li>
+                </ul>
+    
+                <button>
+                    <i class="las la-angle-down"></i>
+                </button>
+            </main>
+        </div>  
 
         <section id="works-section">
-            <h2>My Recent<br>Works</h2>
-            <hr>
+            <h2 class="text-blue text-center">My Recent<br class="desktop-hide"> Works</h2>
+            <hr class="desktop-hide">
 
             <div class="works-container">
                 
@@ -60,112 +64,109 @@
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li><p class="works-languajes">Ruby on rails</p></li>
-                            <li><p class="works-languajes">css</p></li>
-                            <li><p class="works-languajes">JavaScript</p></li>
-                            <li><p class="works-languajes">html</p></li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
                 </div>
-
                 <div class="work">
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li><p class="works-languajes">Ruby on rails</p></li>
-                            <li><p class="works-languajes">css</p></li>
-                            <li><p class="works-languajes">JavaScript</p></li>
-                            <li><p class="works-languajes">html</p></li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
                 </div>
-
                 <div class="work">
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li><p class="works-languajes">Ruby on rails</p></li>
-                            <li><p class="works-languajes">css</p></li>
-                            <li><p class="works-languajes">JavaScript</p></li>
-                            <li><p class="works-languajes">html</p></li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
                 </div>
-
                 <div class="work">
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li><p class="works-languajes">Ruby on rails</p></li>
-                            <li><p class="works-languajes">css</p></li>
-                            <li><p class="works-languajes">JavaScript</p></li>
-                            <li><p class="works-languajes">html</p></li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
                 </div>
-
                 <div class="work">
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li><p class="works-languajes">Ruby on rails</p></li>
-                            <li><p class="works-languajes">css</p></li>
-                            <li><p class="works-languajes">JavaScript</p></li>
-                            <li><p class="works-languajes">html</p></li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
                 </div>
-
                 <div class="work">
                     <div class="img-placeholder"></div>
                     
                     <div class="work-info">
-                        <h4>Multi-Post Stories Gain+Glory</h4>
+                        <h4 class="text-blue text-center">Multi-Post Stories Gain+Glory</h4>
                         <ul class="works-languajes-container">
-                            <li class="works-languajes">Ruby on rails</li>
-                            <li class="works-languajes">css</li>
-                            <li class="works-languajes">JavaScript</li>
-                            <li class="works-languajes">html</li>
+                            <li><p class="works-languajes text-blue text-center">Ruby on rails</p></li>
+                            <li><p class="works-languajes text-blue text-center">css</p></li>
+                            <li><p class="works-languajes text-blue text-center">JavaScript</p></li>
+                            <li><p class="works-languajes text-blue text-center">html</p></li>
                         </ul>
                         <a href="#" class="button">See Project</a>
 
                     </div>
 
-                </div>    
+                </div>
 
             </div>
         </section>
 
         <section id="aboutme-section">
             <div class="aboutme-bg">
-                <h2>About me</h2>           
-                <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
-                <a href="#" class="button">Get My Resume</a>
+                <div class="aboutme-info">
+                    <h2 class="text-blue text-center">About me</h2>           
+                    <p class="paragraph text-center"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
+                    <a href="#" class="button">Get My Resume</a>
+                </div>
             </div>
 
             <ul class="technology-categories">
@@ -211,18 +212,25 @@
         </section>
 
         <section id="contact-form">
-            <div class="form-info">
-                <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <div class="form-container">
+                <div class="form-info">
+                    <h2 class="text-blue text-center">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+                </div>
+    
+                <form action="https://formspree.io/f/xgebvyqg" method="post">
+                    <input type="text" id="full-name" name="name" class="input" placeholder="Full name" maxlength="30" required>
+                    <input type="email" id="email" name="email" class="input" placeholder="Email adress" required>
+                    <textarea name="message" id="textarea" cols="30" rows="10" class="input textarea" placeholder="Typing something" maxlength="500" required></textarea>
+                    
+                    <input type="submit" id="submit-button" class="button" value="Get in touch">
+                </form>
+
+                <div class="footer-background desktop-hide"></div>
             </div>
 
-            <form action="https://formspree.io/f/xgebvyqg" method="post">
-                <input type="text" name="name" class="input" placeholder="Full name" maxlength="30" required>
-                <input type="email" name="email" class="input" placeholder="Email adress" required>
-                <textarea name="message" id="" cols="30" rows="10" class="input textarea" placeholder="Enter text here" maxlength="500" required></textarea>
-                <input type="submit" id="submit-button" class="button" value="Get in touch">
-            </form>
-            <div class="footer-background"></div>
+        </section>
 
+        <footer id="footer">
             <ul class="socials">
                 <li class="social">
                     <a href="https://twitter.com/nicolasolaya22"><i class="lab la-twitter"></i></a>
@@ -241,8 +249,8 @@
                 </li>
             </ul>
 
-            <p>nicolasolaya22@gmail.com</p>
-        </section>
+            <p class="desktop-hide">nicolasolaya22@gmail.com</p>
+        </footer>
         
     </div>
 </body>

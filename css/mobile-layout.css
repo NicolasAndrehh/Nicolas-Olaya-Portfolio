@@ -6,7 +6,7 @@
   list-style: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -71,7 +71,7 @@
     display: flex;
     max-width: 100vw;
     min-height: 100vh;
-    background-image: url(./images/header-illsutration-mobile@2x.png);
+    background-image: url(/images/header-illsutration-mobile@2x.png);
     background-size: 100vw;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -218,11 +218,18 @@
   }
 
   #aboutme-section .aboutme-bg {
-    background-image: url(./images/illustration-\ about\ me-\ mobile.png);
+    background-image: url(/images/illustration-\ about\ me-\ mobile.png);
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: max-content;
     padding: 2rem;
+  }
+
+  #aboutme-section .aboutme-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   @media only screen and (min-width: 400px) {
@@ -234,6 +241,12 @@
   @media only screen and (min-width: 455px) {
     #aboutme-section .aboutme-bg {
       padding: 10rem 2rem;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    #aboutme-section .aboutme-bg {
+      padding: 15rem 2rem;
     }
   }
 
@@ -299,29 +312,18 @@
     gap: 2rem;
   }
 
-  .footer-background {
-    background-image: url(images/Frame.png);
-    background-size: 4rem;
-    background-repeat: no-repeat;
-    width: 4rem;
-    height: 10rem;
-    position: absolute;
-    right: 0;
-    bottom: 5rem;
-  }
-
   #contact-form,
   #contact-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     position: relative;
   }
 
-  #contact-form {
-    margin-bottom: 16rem;
+  #contact-form .form-info {
+    padding: 2rem;
   }
 
   #contact-form h2 {
@@ -329,7 +331,7 @@
   }
 
   #contact-form .input {
-    width: 20rem;
+    width: 85vw;
     height: 3rem;
     border: 1px solid #d0d9d4;
     border-radius: 0.25rem;
@@ -344,5 +346,28 @@
 
   #contact-form #submit-button {
     border: 0;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .footer-background {
+    background-image: url(/images/Frame.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 16rem;
   }
 }

@@ -1,0 +1,415 @@
+@media only screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: inter, Arial, Verdana, Tahoma, sans-serif;
+    list-style: none;
+  }
+
+  html {
+    overflow-x: hidden;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .text-blue {
+    color: #172b4d;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .paragraph {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+  }
+
+  .works-languajes {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+  }
+
+  .button {
+    text-decoration: none;
+    background-color: #36b37e;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0.75rem auto;
+  }
+
+  .button:hover {
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .button:active {
+    background-color: #008552;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .desktop-hide {
+    display: none;
+  }
+
+  .shortcuts-menu {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .shortcuts-menu a {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    color: #344563;
+  }
+
+  #main-desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+    background-image: url(/images/Header-llustration-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100vw;
+    height: 78rem;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1250px) {
+    #main-desktop {
+      height: 65rem;
+    }
+  }
+
+  @media only screen and (max-width: 1060px) {
+    #main-desktop {
+      height: 55rem;
+    }
+  }
+
+  #homepage span {
+    color: #36b37e;
+  }
+
+  #homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 50rem;
+  }
+
+  #homepage .socials,
+  #footer .socials {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .social a {
+    color: #505f79;
+    font-size: 2rem;
+  }
+
+  .github {
+    order: 0;
+  }
+
+  .linkedin {
+    order: 1;
+  }
+
+  .angellist {
+    order: 2;
+  }
+
+  .twitter {
+    order: 3;
+  }
+
+  .medium {
+    order: 4;
+  }
+
+  .work-info a:hover {
+    background-color: #36b37f;
+    box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  }
+
+  .work-info a:active {
+    background-color: #008552;
+  }
+
+  #homepage button {
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+  }
+
+  #works-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .works-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dfe1e6;
+    border-radius: 0.5rem;
+    width: 20.125rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .work .img-placeholder {
+    width: 20rem;
+    height: 15rem;
+    background-color: #ebf0ee;
+  }
+
+  .work-info {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .work-info li {
+    background-color: #ebf0ee;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+  }
+
+  #aboutme-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutme-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/images/illustration\ about\ me\ desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 25rem;
+  }
+
+  .aboutme-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 48rem;
+  }
+
+  @media only screen and (max-width: 1130px) {
+    .aboutme-info {
+      padding: 3rem;
+    }
+  }
+
+  @media only screen and (max-width: 970px) {
+    .aboutme-info {
+      padding: 6rem;
+    }
+  }
+
+  .aboutme-info p {
+    color: #42526e;
+  }
+
+  .technology-categories {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  @media only screen and (max-width: 1245px) {
+    .technology-categories {
+      flex-wrap: wrap;
+    }
+  }
+
+  .aboutme-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebf0ee;
+    width: 23rem;
+    height: 22rem;
+    border: 1px solid #c1c7d0;
+    border-radius: 0.5rem;
+    gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .aboutme-card img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .aboutme-card h4 {
+    color: #344563;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+    max-width: fit-content;
+  }
+
+  .aboutme-card ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .aboutme-card li {
+    background-color: #fff;
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #36b37e;
+  }
+
+  #contact-form,
+  #contact-form form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.75rem;
+    padding: 2rem;
+    justify-content: flex-start;
+    width: 50vw;
+  }
+
+  .form-container h2 {
+    font-size: 1.8rem;
+  }
+
+  #contact-form h2 {
+    text-align: center;
+  }
+
+  #contact-form .input {
+    border: 1px solid #d0d9d4;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 1rem;
+  }
+
+  .input::placeholder {
+    font-size: 1rem;
+  }
+
+  #contact-form .input:focus {
+    outline: none;
+    border: 1px solid #60c095;
+  }
+
+  #contact-form .button {
+    margin: 0;
+  }
+
+  #full-name,
+  #email,
+  #textarea {
+    width: 100%;
+  }
+
+  #textarea {
+    height: 7rem;
+  }
+
+  #contact-form {
+    display: flex;
+    background-image: url(/images/illustration-2-contact-form-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100vw;
+    width: 100vw;
+    height: 50rem;
+    padding: 0 7rem;
+  }
+
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  #submit-button {
+    border: 0;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid #dfe1e6;
+  }
+}

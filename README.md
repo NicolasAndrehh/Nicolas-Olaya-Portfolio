@@ -143,7 +143,14 @@ Clone this repository to your desired folder:
 
 Install this project with:
 
-- This project doesn't need an install
+```sh
+  // To install Webhint
+  npm install --save-dev hint@7.x
+  npx hint .
+  
+  // To install Stylelint
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
 
 ### Usage
 
