@@ -320,6 +320,10 @@
     position: relative;
   }
 
+  #contact-form {
+    margin-bottom: 16rem;
+  }
+
   #contact-form h2 {
     text-align: center;
   }
