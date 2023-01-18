@@ -207,6 +207,11 @@
     border-radius: 0.5rem;
     width: 20.125rem;
     margin-bottom: 2.5rem;
+    transition: transform 0.7s ease-in-out;
+  }
+ 
+  .work:hover {
+    transform: scale(1.1);
   }
 
   .work .img-placeholder {
