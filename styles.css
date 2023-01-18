@@ -307,7 +307,7 @@
     height: 10rem;
     position: absolute;
     right: 0;
-    top: 933vh;
+    bottom: 5rem;
   }
 
   #contact-form,
@@ -317,6 +317,7 @@
     align-items: center;
     gap: 1.5rem;
     padding: 2rem;
+    position: relative;
   }
 
   #contact-form h2 {
