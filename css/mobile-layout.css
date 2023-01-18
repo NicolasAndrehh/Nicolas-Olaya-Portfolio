@@ -183,6 +183,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0.75rem auto;
+    border-radius: 0.25rem;
   }
 
   .work-info a:hover {
@@ -222,6 +223,13 @@
     background-repeat: no-repeat;
     min-height: max-content;
     padding: 2rem;
+  }
+
+  #aboutme-section .aboutme-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
   @media only screen and (min-width: 400px) {
@@ -298,11 +306,16 @@
     gap: 2rem;
   }
 
-  #contact-form, #contact-form form {
+  #contact-form, #contact-form #mobile-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    padding: 2rem 2rem 1rem 2rem;
+    position: relative;
+  }
+
+  #contact-form .form-info {
     padding: 2rem;
   }
   
@@ -311,7 +324,7 @@
   }
 
   #contact-form .input {
-    width: 20rem;
+    width: 85vw;
     height: 3rem;
     border: 1px solid #d0d9d4;
     border-radius: 0.25rem;
@@ -319,8 +332,36 @@
     padding: 1rem;
   }
 
+  #contact-form .input:focus {
+    outline: none;
+    border: 1px solid #36b37e;
+  }
+
+  #contact-form #submit-button {
+    border: 0;
+  }
+
   .mobile-hide {
     display: none;
+  }
+
+  .footer-background {
+    background-image: url(/images/Frame.png);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 10rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 16rem;
   }
 
 }
