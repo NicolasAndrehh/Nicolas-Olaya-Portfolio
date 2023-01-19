@@ -62,6 +62,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin: 0.75rem auto;
+    transition: background-color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
   }
 
   .button:hover {
@@ -162,6 +163,10 @@
     order: 4;
   }
 
+  .social i:hover {
+    color: #36b37e;
+  }
+
   .work-info a:hover {
     background-color: #36b37f;
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
@@ -207,11 +212,19 @@
     border-radius: 0.5rem;
     width: 20.125rem;
     margin-bottom: 2.5rem;
+    transition: transform 0.3s ease-in-out, border 0.5s ease-in-out;
+  }
+
+  .work:hover {
+    transform: scale(1.1);
+    border: 1px solid #36b37f;
+    border-radius: 0.5rem;
   }
 
   .work .img-placeholder {
     width: 20rem;
     height: 15rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     background-color: #ebf0ee;
   }
 
@@ -293,6 +306,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    overflow: hidden;
     background-color: #ebf0ee;
     width: 23rem;
     height: 22rem;
@@ -300,6 +315,50 @@
     border-radius: 0.5rem;
     gap: 2rem;
     padding-top: 1rem;
+    transition: all 0.3s;
+  }
+
+  .aboutme-card::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: -4rem;
+    width: 35rem;
+    height: 34rem;
+    background-image: conic-gradient(#36b37f 40deg, transparent 40deg);
+    animation: rotate 3s linear infinite;
+  }
+
+  .aboutme-card::after {
+    content: "";
+    position: absolute;
+    top: 0.2rem;
+    width: 22.5rem;
+    height: 21.4rem;
+    border-radius: 0.5rem;
+    background-color: #ebf0ee;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .aboutme-card:hover {
+    transform: scale(1.1);
+  }
+
+  .aboutme-card:hover::before {
+    display: block;
+  }
+
+  .aboutme-card > * {
+    z-index: 1;
   }
 
   .aboutme-card img {
