@@ -214,7 +214,7 @@
     margin-bottom: 2.5rem;
     transition: transform 0.3s ease-in-out, border 0.5s ease-in-out;
   }
- 
+
   .work:hover {
     transform: scale(1.1);
     border: 1px solid #36b37f;
@@ -224,7 +224,7 @@
   .work .img-placeholder {
     width: 20rem;
     height: 15rem;
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     background-color: #ebf0ee;
   }
 
@@ -343,6 +343,7 @@
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
