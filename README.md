@@ -106,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Nicolas-Olaya-Portfolio - Live Demo](https://NicolasAndrehh.github.io/)
+[Nicolas-Olaya-Portfolio - Live Demo](https://nicolasandrehh.github.io/Nicolas-Olaya-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
