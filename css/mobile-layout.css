@@ -10,7 +10,7 @@
   .navbar {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    max-width: 100vw;
     height: 3rem;
     padding: 1rem 2rem;
   }
@@ -18,16 +18,18 @@
   .options-button {
     background: none;
     border: none;
+    cursor: pointer;
   }
 
   .exit-button {
     position: absolute;
     right: 2rem;
-    top: 2rem;
+    top: 1rem;
     background: none;
     border: none;
     font-size: 1.5rem;
     color: #67798E;
+    cursor: pointer;
   }
 
   .shortcuts-menu {
@@ -391,6 +393,7 @@
 
   #contact-form #submit-button {
     border: 0;
+    cursor: pointer;
   }
 
   .mobile-hide {

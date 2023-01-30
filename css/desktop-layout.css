@@ -463,6 +463,7 @@
 
   #submit-button {
     border: 0;
+    cursor: pointer;
   }
 
   #footer {
