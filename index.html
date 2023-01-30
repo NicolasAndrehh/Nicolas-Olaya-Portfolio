@@ -17,12 +17,20 @@
             <nav class="navbar">
                 <h2 class="desktop-hide">Welcome</h2>
     
-                <ul class="shortcuts-menu">
-                    <li class="desktop-hide"><a href="#" class="options"><i class="las la-bars"></i></a></li>
-                    <li><a href="#" class="shortcuts">Portfolio</a></li>
-                    <li><a href="#" class="shortcuts">About</a></li>
-                    <li><a href="#" class="shortcuts">Contact</a></li>
-                </ul>
+                <button class="options-button desktop-hide">
+                    <li class="desktop-hide options"><i class="las la-bars"></i></li>
+                </button>
+
+                <div class="modal hide">
+                    <button class="exit-button desktop-hide">
+                        <li class="las la-times"></li>
+                    </button>
+                    <ul class="shortcuts-menu">
+                        <li><a href="#works-section" class="shortcuts">Portfolio</a></li>
+                        <li><a href="#aboutme-section" class="shortcuts">About</a></li>
+                        <li><a href="#contact-form" class="shortcuts">Contact</a></li>
+                    </ul>
+                </div>
                 
             </nav>
     
