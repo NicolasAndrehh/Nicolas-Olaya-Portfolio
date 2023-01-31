@@ -28,7 +28,7 @@
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #67798E;
+    color: #67798e;
     cursor: pointer;
   }
 
@@ -46,7 +46,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2rem;
   }
 
@@ -62,7 +62,7 @@
     font-size: 2rem;
     line-height: 2.75rem;
     font-weight: 600;
-    color: #3A4A42;
+    color: #3a4a42;
     text-decoration: none;
   }
 
