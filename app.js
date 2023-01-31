@@ -1,67 +1,117 @@
 // Menu Modal
-let modalMenu = document.querySelector('#modal-menu')
-let body = document.body
-let openMenuButton = document.querySelector('#open-menu-button')
-let closeMenuButton = document.querySelector('#close-menu-button')
+const modalMenu = document.querySelector('#modal-menu');
+const html = document.querySelector('html');
+const openMenuButton = document.querySelector('#open-menu-button');
+const closeMenuButton = document.querySelector('#close-menu-button');
 
-openMenuButton.addEventListener("click", function(e) {
-    e.preventDefault()
-    modalMenu.classList.remove('hide')
-    modalMenu.classList.add('show')
-    body.classList.add('stop-scroll')
-})
+openMenuButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  modalMenu.classList.remove('hide');
+  modalMenu.classList.add('show');
+  html.classList.add('stop-scroll');
+});
 
-closeMenuButton.addEventListener("click", function(e) {
-    e.preventDefault()
-    modalMenu.classList.remove('show')
-    modalMenu.classList.add('hide')
-    body.classList.remove('stop-scroll')
-})
+closeMenuButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  modalMenu.classList.remove('show');
+  modalMenu.classList.add('hide');
+  html.classList.remove('stop-scroll');
+});
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault()
-        modalMenu.classList.remove('show')
-        modalMenu.classList.add('hide')
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        })
-        body.classList.remove('stop-scroll')
-    })
-})
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function anchorScroll(e) {
+    e.preventDefault();
+    modalMenu.classList.remove('show');
+    modalMenu.classList.add('hide');
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
+    });
+    html.classList.remove('stop-scroll');
+  });
+});
+
+// Store each project into an Object - Show every project
+const projectsArray = [
+  {
+    name: 'Multi-Post Stories Gain+Glory',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: 'images/img-placeholder.png',
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
+    live: '#',
+    source: '#',
+  },
+];
+
+let workCard = '';
+
+for (let i = 0; i < 6; i += 1) {
+  workCard = `
+<div class="work">
+  <img src="${projectsArray[0].image}" alt="Image-Placeholder" class="img-placeholder">  
+  <div id="work1" class="work-info">
+    <h4 class="text-blue text-center">${projectsArray[0].name}</h4>
+    <ul class="works-languajes-container">
+      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[0]}</p></li>
+      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[1]}</p></li>
+      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[2]}</p></li>
+      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[3]}</p></li>
+    </ul>
+    <a href="#" id="open-detail-button${i}" class="button">See Project</a>
+  </div>
+</div>`;
+}
+
+const worksSection = document.querySelector('#works-section');
+worksSection.innerHTML += `
+<h2 class="text-blue text-center">My Recent<br class="desktop-hide"> Works</h2>
+<hr class="desktop-hide">
+<div class="works-container">
+  ${workCard.repeat(6)}  
+</div>`;
 
 // Project Detail Modal
 
-let modalDetail = document.querySelector('#modal-detail')
-let openDetailButton = document.querySelector('#open-detail-button')
-let closeDetailButton = document.querySelector('#close-detail-button')
+const modalDetail = document.querySelector('#modal-detail');
+modalDetail.innerHTML += `
+<div class="modal-works-detail">
+<img src="${projectsArray[0].image}" alt="Image-Placeholder" class="img-placeholder">
+<button id="close-detail-button" class="close-detail-button">
+  <i class="las la-times"></i>
+</button>
+<div class="button-alignment">
+  <h4 class="text-blue text-center">${projectsArray[0].name}</h4>
+  <div class="detail-buttons">
+  <a href="${projectsArray[0].live}" class="button">See Live <i class="las la-share-square"></i></a>
+  <a href="${projectsArray[0].source}" class="button">See source <i class="lab la-github"></i></a>
+</div>
+</div>
+<ul class="works-languajes-container">
+  <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[0]}</p></li>
+  <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[1]}</p></li>
+  <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[2]}</p></li>
+</ul>
+<p>${projectsArray[0].description}</p>
+<div class="detail-buttons">
+  <a href="${projectsArray[0].live}" class="button">See Live <i class="las la-share-square"></i></a>
+  <a href="${projectsArray[0].source}" class="button">See source <i class="lab la-github"></i></a>
+</div>
+</div>`;
 
-openDetailButton.addEventListener("click", function(e) {
-    e.preventDefault()
-    modalDetail.classList.remove('hide')
-    modalDetail.classList.add('show')
-    body.classList.add('stop-scroll')
-})
+const openDetailButton = document.querySelectorAll('#works-section .button');
+const closeDetailButton = document.querySelector('#close-detail-button');
 
-closeDetailButton.addEventListener("click", function(e) {
-    e.preventDefault()
-    modalDetail.classList.remove('show')
-    modalDetail.classList.add('hide')
-    body.classList.remove('stop-scroll')
-})
+openDetailButton.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalDetail.classList.remove('hide');
+    modalDetail.classList.add('show');
+    html.classList.add('stop-scroll');
+  });
 
-// Store each project into an Object
-let work = {
-  name: "",
-  description: "",
-  image: "", 
-  technologies: [],
-  liveVersion: "",
-  source: ""
-}
-
-work.name = document.querySelector('#work1 h4').textContent
-// work.image = document.querySelector('#work1 img').textContent
-// work.name = document.querySelector('#work1 h4').textContent
-// work.name = document.querySelector('#work1 h4').textContent
-console.log(work.name);
+  closeDetailButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalDetail.classList.remove('show');
+    modalDetail.classList.add('hide');
+    html.classList.remove('stop-scroll');
+  });
+});
