@@ -28,7 +28,7 @@
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: #67798E;
+    color: #67798e;
     cursor: pointer;
   }
 
@@ -64,7 +64,7 @@
     padding: 1rem;
     gap: 1rem;
   }
-  
+
   .modal-works-detail .img-placeholder {
     width: 100%;
     height: 13.75rem;
@@ -86,6 +86,11 @@
     color: #172b4d;
     font-size: 2rem;
     line-height: 2.75rem;
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .modal-works-detail .works-languajes-container {
@@ -119,6 +124,19 @@
     display: flex;
   }
 
+  .button {
+    text-decoration: none;
+    background-color: #36b37e;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0.75rem auto;
+    border-radius: 0.25rem;
+  }
+
   .detail-buttons .button {
     display: flex;
     justify-content: space-around;
@@ -147,7 +165,7 @@
     font-size: 2rem;
     line-height: 2.75rem;
     font-weight: 600;
-    color: #3A4A42;
+    color: #3a4a42;
     text-decoration: none;
   }
 
@@ -289,7 +307,7 @@
     width: 20rem;
     height: 15rem;
     background-color: #ebf0ee;
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
   .work-info {
@@ -303,20 +321,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-    max-width: fit-content;
-  }
-
-  .button {
-    text-decoration: none;
-    background-color: #36b37e;
-    padding: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #fff;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin: 0.75rem auto;
-    border-radius: 0.25rem;
   }
 
   .work-info a:hover {
@@ -334,11 +338,6 @@
 
   .button:active {
     background-color: #008552;
-  }
-
-  .works-languajes-container {
-    display: flex;
-    justify-content: space-between;
   }
 
   #aboutme-section,
@@ -406,7 +405,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-    max-width: fit-content;
   }
 
   .aboutme-card ul {
