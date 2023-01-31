@@ -217,7 +217,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-    max-width: fit-content;
   }
 
   .button {
@@ -320,7 +319,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-    max-width: fit-content;
   }
 
   .aboutme-card ul {
