@@ -25,5 +25,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         })
+        body.classList.remove('stop-scroll')
     })
+})
+
+let modalDetail = document.querySelector('#modal-detail')
+let openDetailButton = document.querySelector('#open-detail-button')
+let closeDetailButton = document.querySelector('#close-detail-button')
+
+openDetailButton.addEventListener("click", function(e) {
+    e.preventDefault()
+    modalDetail.classList.remove('hide')
+    modalDetail.classList.add('show')
+    body.classList.add('stop-scroll')
+})
+
+closeDetailButton.addEventListener("click", function(e) {
+    e.preventDefault()
+    modalDetail.classList.remove('show')
+    modalDetail.classList.add('hide')
+    body.classList.remove('stop-scroll')
 })
