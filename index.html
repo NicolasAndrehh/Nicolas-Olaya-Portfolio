@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicolas Olaya Portfolio</title>
+    <link rel="shortcut icon" href="images/shikimori.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/mobile-layout.css">
     <link rel="stylesheet" href="css/desktop-layout.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -17,12 +18,20 @@
             <nav class="navbar">
                 <h2 class="desktop-hide">Welcome</h2>
     
-                <ul class="shortcuts-menu">
-                    <li class="desktop-hide"><a href="#" class="options"><i class="las la-bars"></i></a></li>
-                    <li><a href="#" class="shortcuts">Portfolio</a></li>
-                    <li><a href="#" class="shortcuts">About</a></li>
-                    <li><a href="#" class="shortcuts">Contact</a></li>
-                </ul>
+                <button id="open-menu-button" class="options-button desktop-hide">
+                    <li class="desktop-hide options"><i class="las la-bars"></i></li>
+                </button>
+
+                <div id="modal-menu" class="modal hide">
+                    <button id="close-menu-button" class="exit-button desktop-hide">
+                        <li class="las la-times"></li>
+                    </button>
+                    <ul class="shortcuts-menu">
+                        <li><a href="#works-section" class="shortcuts">Portfolio</a></li>
+                        <li><a href="#aboutme-section" class="shortcuts">About</a></li>
+                        <li><a href="#contact-form" class="shortcuts">Contact</a></li>
+                    </ul>
+                </div>
                 
             </nav>
     
@@ -253,5 +262,7 @@
         </footer>
         
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
