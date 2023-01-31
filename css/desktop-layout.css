@@ -78,7 +78,7 @@
   }
 
   .desktop-hide {
-    display: none;
+    display: none !important;
   }
 
   .shortcuts-menu {
@@ -140,13 +140,15 @@
   }
 
   .modal-works-detail .button-alignment {
-    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .modal-works-detail h4 {
     color: #172b4d;
     font-size: 2rem;
     line-height: 2.75rem;
+    text-align: left;
   }
 
   .modal-works-detail .works-languajes-container {
@@ -186,6 +188,8 @@
     align-items: center;
     gap: 1rem;
     width: 47%;
+    max-height: 5rem;
+    border-radius: 0.5rem;
   }
 
   .detail-buttons i {

@@ -80,7 +80,7 @@ modalDetail.innerHTML += `
 </button>
 <div class="button-alignment">
   <h4 class="text-blue text-center">${projectsArray[0].name}</h4>
-  <div class="detail-buttons">
+  <div class="detail-buttons mobile-hide">
   <a href="${projectsArray[0].live}" class="button">See Live <i class="las la-share-square"></i></a>
   <a href="${projectsArray[0].source}" class="button">See source <i class="lab la-github"></i></a>
 </div>
@@ -91,7 +91,7 @@ modalDetail.innerHTML += `
   <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[2]}</p></li>
 </ul>
 <p>${projectsArray[0].description}</p>
-<div class="detail-buttons">
+<div class="detail-buttons desktop-hide">
   <a href="${projectsArray[0].live}" class="button">See Live <i class="las la-share-square"></i></a>
   <a href="${projectsArray[0].source}" class="button">See source <i class="lab la-github"></i></a>
 </div>

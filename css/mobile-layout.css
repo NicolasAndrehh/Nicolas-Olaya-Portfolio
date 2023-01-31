@@ -483,7 +483,7 @@
   }
 
   .mobile-hide {
-    display: none;
+    display: none !important;
   }
 
   .footer-background {
