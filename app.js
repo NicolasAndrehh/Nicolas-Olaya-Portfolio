@@ -1,3 +1,4 @@
+// Menu Modal
 let modalMenu = document.querySelector('#modal-menu')
 let body = document.body
 let openMenuButton = document.querySelector('#open-menu-button')
@@ -29,6 +30,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
+// Project Detail Modal
+
 let modalDetail = document.querySelector('#modal-detail')
 let openDetailButton = document.querySelector('#open-detail-button')
 let closeDetailButton = document.querySelector('#close-detail-button')
@@ -46,3 +49,19 @@ closeDetailButton.addEventListener("click", function(e) {
     modalDetail.classList.add('hide')
     body.classList.remove('stop-scroll')
 })
+
+// Store each project into an Object
+let work = {
+  name: "",
+  description: "",
+  image: "", 
+  technologies: [],
+  liveVersion: "",
+  source: ""
+}
+
+work.name = document.querySelector('#work1 h4').textContent
+// work.image = document.querySelector('#work1 img').textContent
+// work.name = document.querySelector('#work1 h4').textContent
+// work.name = document.querySelector('#work1 h4').textContent
+console.log(work.name);
