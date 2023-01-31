@@ -15,7 +15,7 @@ closeMenuButton.addEventListener('click', (e) => {
 });
 
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', (e) => {
+  anchor.addEventListener('click', function anchorScroll(e) {
     e.preventDefault();
     modalMenu.classList.remove('show');
     modalMenu.classList.add('hide');
