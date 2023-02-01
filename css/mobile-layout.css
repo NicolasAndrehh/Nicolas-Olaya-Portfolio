@@ -15,15 +15,15 @@
     padding: 1rem 2rem;
   }
 
-  .options-button {
+  .menu-button {
     background: none;
     border: none;
     cursor: pointer;
   }
 
-  .exit-button {
+  .exit-button-menu {
     position: absolute;
-    right: 2rem;
+    right: 2.25rem;
     top: 1rem;
     background: none;
     border: none;
@@ -41,13 +41,112 @@
 
   .modal {
     position: fixed;
-    overflow: hidden;
+    overflow: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #fff;
-    padding: 2rem;
+    background-color: white;
+    padding: 1.2rem;
+  }
+
+  .modal-works {
+    background: rgba(72, 84, 100, 0.5);
+  }
+
+  .modal-works-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .modal-works-detail .img-placeholder {
+    width: 100%;
+    height: 13.75rem;
+    background-color: #ebf0ee;
+    border-radius: 0.5rem;
+  }
+
+  .modal-works-detail .close-detail-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    cursor: pointer;
+  }
+
+  .modal-works-detail h4 {
+    color: #172b4d;
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-works-detail .works-languajes-container {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .modal-works-detail .works-languajes {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .modal-works-detail li {
+    background-color: #ebf0ee;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+  }
+
+  .modal-works-detail p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .modal-works-detail .detail-buttons {
+    display: flex;
+  }
+
+  .button {
+    text-decoration: none;
+    background-color: #36b37e;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0.75rem auto;
+    border-radius: 0.25rem;
+  }
+
+  .detail-buttons .button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 47%;
+  }
+
+  .detail-buttons i {
+    font-size: 2rem;
   }
 
   .show {
@@ -56,6 +155,10 @@
 
   .hide {
     display: none;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
   }
 
   .shortcuts-menu .shortcuts {
@@ -204,6 +307,7 @@
     width: 20rem;
     height: 15rem;
     background-color: #ebf0ee;
+    border-radius: 0.5rem 0.5rem 0 0;
   }
 
   .work-info {
@@ -217,19 +321,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 2rem;
-  }
-
-  .button {
-    text-decoration: none;
-    background-color: #36b37e;
-    padding: 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #fff;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin: 0.75rem auto;
-    border-radius: 0.25rem;
   }
 
   .work-info a:hover {
@@ -247,11 +338,6 @@
 
   .button:active {
     background-color: #008552;
-  }
-
-  .works-languajes-container {
-    display: flex;
-    justify-content: space-between;
   }
 
   #aboutme-section,
@@ -395,7 +481,7 @@
   }
 
   .mobile-hide {
-    display: none;
+    display: none !important;
   }
 
   .footer-background {

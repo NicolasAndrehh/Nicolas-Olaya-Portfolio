@@ -78,7 +78,7 @@
   }
 
   .desktop-hide {
-    display: none;
+    display: none !important;
   }
 
   .shortcuts-menu {
@@ -93,6 +93,124 @@
     line-height: 1.25rem;
     font-weight: 600;
     color: #344563;
+  }
+
+  .modal {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(72, 84, 100, 0.8);
+    padding: 1.2rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .modal-works-detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    width: 60vw;
+    min-height: 90vh;
+    border-radius: 0.5rem;
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .modal-works-detail .img-placeholder {
+    width: 100%;
+    height: 30rem;
+    border-radius: 0.5rem;
+  }
+
+  .modal-works-detail .close-detail-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    background: #ebecf0;
+    padding: 0.25rem 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .modal-works-detail .button-alignment {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-works-detail h4 {
+    color: #172b4d;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    text-align: left;
+  }
+
+  .works-languajes-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-works-detail .works-languajes-container {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .modal-works-detail .works-languajes {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .modal-works-detail li {
+    background-color: #ebf0ee;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #3a4a42;
+  }
+
+  .modal-works-detail p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .modal-works-detail .detail-buttons {
+    display: flex;
+  }
+
+  .detail-buttons .button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    width: 47%;
+    max-height: 5rem;
+    border-radius: 0.5rem;
+  }
+
+  .detail-buttons i {
+    font-size: 2rem;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
   }
 
   #main-desktop {
@@ -233,11 +351,6 @@
     flex-direction: column;
     padding: 1rem;
     gap: 1rem;
-  }
-
-  .works-languajes-container {
-    display: flex;
-    justify-content: space-between;
   }
 
   .work-info li {
