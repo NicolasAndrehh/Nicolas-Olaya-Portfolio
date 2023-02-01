@@ -115,3 +115,17 @@ openDetailButton.forEach((button) => {
     html.classList.remove('stop-scroll');
   });
 });
+
+// Form validation
+
+const form = document.querySelector('#contactForm');
+const emailMessage = document.querySelector('#email-message');
+const emailRegex = /[A-Z]/;
+form.addEventListener('submit', (e) => {
+  const email = document.querySelector('#email').value;
+  if (emailRegex.test(email)) {
+    e.preventDefault();
+    emailMessage.innerHTML += `*The email field has to be in lower case try with this one instead: <strong>${email.toLowerCase()}</strong>*`;
+    emailMessage.classList.remove('hide');
+  }
+});

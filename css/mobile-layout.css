@@ -480,6 +480,10 @@
     cursor: pointer;
   }
 
+  #email-message {
+    color: #008552;
+  }
+
   .mobile-hide {
     display: none !important;
   }

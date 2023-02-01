@@ -206,7 +206,7 @@
   }
 
   .hide {
-    display: none;
+    display: none !important;
   }
 
   .stop-scroll {
@@ -565,6 +565,10 @@
     width: 100vw;
     height: 50rem;
     padding: 0 7rem;
+  }
+
+  #email-message {
+    color: #008552;
   }
 
   .form-container {
