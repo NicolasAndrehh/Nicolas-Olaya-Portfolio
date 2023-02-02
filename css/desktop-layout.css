@@ -507,8 +507,8 @@
     color: #36b37e;
   }
 
-  #contact-form,
-  #contact-form form {
+  #contact-form-section,
+  #contact-form-section form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -522,11 +522,11 @@
     font-size: 1.8rem;
   }
 
-  #contact-form h2 {
+  #contact-form-section h2 {
     text-align: center;
   }
 
-  #contact-form .input {
+  #contact-form-section .input {
     border: 1px solid #d0d9d4;
     border-radius: 0.25rem;
     background: #fff;
@@ -537,12 +537,12 @@
     font-size: 1rem;
   }
 
-  #contact-form .input:focus {
+  #contact-form-section .input:focus {
     outline: none;
     border: 1px solid #60c095;
   }
 
-  #contact-form .button {
+  #contact-form-section .button {
     margin: 0;
   }
 
@@ -556,7 +556,7 @@
     height: 7rem;
   }
 
-  #contact-form {
+  #contact-form-section {
     display: flex;
     background-image: url(/images/illustration-2-contact-form-desktop@2x.png);
     background-repeat: no-repeat;

@@ -433,7 +433,7 @@
     font-size: 1rem;
   }
 
-  #contact-form form .textarea {
+  #contact-form-section form .textarea {
     height: 7rem;
   }
 
@@ -443,8 +443,8 @@
     gap: 2rem;
   }
 
-  #contact-form,
-  #contact-form form {
+  #contact-form-section,
+  #contact-form-section form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -453,15 +453,15 @@
     position: relative;
   }
 
-  #contact-form .form-info {
+  #contact-form-section .form-info {
     padding: 2rem;
   }
 
-  #contact-form h2 {
+  #contact-form-section h2 {
     text-align: center;
   }
 
-  #contact-form .input {
+  #contact-form-section .input {
     width: 85vw;
     height: 3rem;
     border: 1px solid #d0d9d4;
@@ -470,12 +470,12 @@
     padding: 1rem;
   }
 
-  #contact-form .input:focus {
+  #contact-form-section .input:focus {
     outline: none;
     border: 1px solid #36b37e;
   }
 
-  #contact-form #submit-button {
+  #contact-form-section #submit-button {
     border: 0;
     cursor: pointer;
   }

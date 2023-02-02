@@ -118,7 +118,7 @@ openDetailButton.forEach((button) => {
 
 // Form validation
 
-const form = document.querySelector('#contactForm');
+const form = document.querySelector('#contact-form');
 const emailMessage = document.querySelector('#email-message');
 const emailRegex = /[A-Z]/;
 form.addEventListener('submit', (e) => {
@@ -129,3 +129,28 @@ form.addEventListener('submit', (e) => {
     emailMessage.classList.remove('hide');
   }
 });
+
+// Local storage
+
+const formInputs = document.querySelectorAll('#contact-form .input');
+const fullNameInput = document.querySelector('#contact-form #full-name');
+const emailInput = document.querySelector('#contact-form #email');
+const messageInput = document.querySelector('#contact-form #textarea');
+
+formInputs.forEach((input) => {
+  input.addEventListener('keyup', () => {
+    const formData = {
+      name: fullNameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+    const formDataJSON = JSON.stringify(formData);
+    localStorage.setItem('formData', formDataJSON);
+  });
+});
+
+const formData = JSON.parse(localStorage.getItem('formData'));
+
+fullNameInput.value = formData.name;
+emailInput.value = formData.email;
+messageInput.value = formData.message;
