@@ -47,7 +47,7 @@ let workCard = '';
 for (let i = 0; i < 6; i += 1) {
   workCard = `
 <div class="work">
-  <img src="${projectsArray[0].image}" alt="Image-Placeholder" class="img-placeholder">  
+  <img src="${projectsArray[0].imag}" alt="Image-Placeholder" class="img-placeholder">  
   <div id="work1" class="work-info">
     <h4 class="text-blue text-center">${projectsArray[0].name}</h4>
     <ul class="works-languajes-container">
@@ -118,7 +118,7 @@ openDetailButton.forEach((button) => {
 
 // Form validation
 
-const form = document.querySelector('#contact-form');
+const form = document.querySelector('#contat-form');
 const emailMessage = document.querySelector('#email-message');
 const emailRegex = /[A-Z]/;
 form.addEventListener('submit', (e) => {
@@ -144,8 +144,8 @@ formInputs.forEach((input) => {
       email: emailInput.value,
       message: messageInput.value,
     };
-    const formDataJSON = JSON.stringify(formData);
-    localStorage.setItem('formData', formDataJSON);
+
+    localStorage.setItem('formData', formData);
   });
 });
 
