@@ -133,21 +133,23 @@ form.addEventListener('submit', (e) => {
 // Local storage
 
 const formInputs = document.querySelectorAll('#contact-form .input');
+const fullNameInput = document.querySelector('#contact-form #full-name');
+const emailInput = document.querySelector('#contact-form #email');
+const messageInput = document.querySelector('#contact-form #textarea');
+
 formInputs.forEach((input) => {
   input.addEventListener('keyup', () => {
+
     const formData = {
-      name: document.querySelector('#contact-form #full-name').value,
-      email: document.querySelector('#contact-form #email').value,
-      message: document.querySelector('#contact-form #textarea').value,
+      name: fullNameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
     };
     const formDataJSON = JSON.stringify(formData);
     localStorage.setItem('formData', formDataJSON);
   });
 });
 
-const fullNameInput = document.querySelector('#contact-form #full-name');
-const emailInput = document.querySelector('#contact-form #email');
-const messageInput = document.querySelector('#contact-form #textarea');
 const formData = JSON.parse(localStorage.getItem('formData'));
 
 fullNameInput.value = formData.name;
