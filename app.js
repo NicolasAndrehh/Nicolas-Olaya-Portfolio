@@ -139,7 +139,6 @@ const messageInput = document.querySelector('#contact-form #textarea');
 
 formInputs.forEach((input) => {
   input.addEventListener('keyup', () => {
-
     const formData = {
       name: fullNameInput.value,
       email: emailInput.value,
