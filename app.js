@@ -33,28 +33,29 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Store each project into an Object - Show every project
 const projectsArray = [
   {
-    name: 'Multi-Post Stories Gain+Glory',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: 'images/img-placeholder.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
+    name: 'Mr Olympia Project',
+    description: 'This project is about Mr Olympia Website where you can learn about the Mr Olympia Categories, Athletes and previous competitions',
+    image: './images/MrOlympiaProject.png',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     live: '#',
     source: '#',
   },
 ];
 
 let workCard = '';
+let technologies = '';
 
-for (let i = 0; i < 6; i += 1) {
-  workCard = `
+for (let i = 0; i < projectsArray.length; i += 1) {
+  for (let j = 0; j < projectsArray[i].technologies.length; j += 1) {
+    technologies += `<li><p class="works-languajes text-blue text-center">${projectsArray[i].technologies[j]}</p></li>`;
+  }
+  workCard += `
 <div class="work">
-  <img src="${projectsArray[0].image}" alt="Image-Placeholder" class="img-placeholder">  
+  <img src="${projectsArray[i].image}" alt="Image-Placeholder" class="img-placeholder">  
   <div id="work1" class="work-info">
-    <h4 class="text-blue text-center">${projectsArray[0].name}</h4>
+    <h4 class="text-blue text-center">${projectsArray[i].name}</h4>
     <ul class="works-languajes-container">
-      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[0]}</p></li>
-      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[1]}</p></li>
-      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[2]}</p></li>
-      <li><p class="works-languajes text-blue text-center">${projectsArray[0].technologies[3]}</p></li>
+      ${technologies}
     </ul>
     <a href="#" id="open-detail-button${i}" class="button">See Project</a>
   </div>
@@ -66,7 +67,7 @@ worksSection.innerHTML += `
 <h2 class="text-blue text-center">My Recent<br class="desktop-hide"> Works</h2>
 <hr class="desktop-hide">
 <div class="works-container">
-  ${workCard.repeat(6)}  
+  ${workCard}  
 </div>`;
 
 // Project Detail Modal
@@ -144,12 +145,16 @@ formInputs.forEach((input) => {
       email: emailInput.value,
       message: messageInput.value,
     };
-    const formDataJSON = JSON.stringify(formData);
-    localStorage.setItem('formData', formDataJSON);
+
+    localStorage.setItem('formData', JSON.stringify(formData));
   });
 });
 
-const formData = JSON.parse(localStorage.getItem('formData'));
+const formData = JSON.parse(localStorage.getItem('formData')) ? JSON.parse(localStorage.getItem('formData')) : {
+  name: '',
+  email: '',
+  message: '',
+};
 
 fullNameInput.value = formData.name;
 emailInput.value = formData.email;
